@@ -41,7 +41,7 @@ const Register = () => {
     <div
       style={{
         backgroundImage: `url('https://www.mhpcolorado.org/wp-content/uploads/2020/01/bigstock-Abstract-blue-background-wal-6002095.jpg')`,
-        height: "750px",
+        height: "625px",
       }}
     >
       <div className="Auth-form-container">
