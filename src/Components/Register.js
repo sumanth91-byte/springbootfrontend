@@ -40,40 +40,41 @@ const Register = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('https://static2.bigstockphoto.com/7/7/2/large1500/277401307.jpg')`,
+        backgroundImage: `url('https://www.mhpcolorado.org/wp-content/uploads/2020/01/bigstock-Abstract-blue-background-wal-6002095.jpg')`,
         height: "750px",
       }}
     >
       <div className="Auth-form-container">
         <div
           className="Auth-form"
-          style={{ backgroundColor: "black", color: "white" }}
+          // style={{ backgroundColor: "black", color: "white" }}
         >
-          <div className="Auth-form-content">
-            <h1>SignUp !</h1>
+          <div className="Auth-form-content"style={{ color: "black" }}>
+          <h1> &emsp;SignUp !</h1><br></br>
 
-            <form className="container" onSubmit={handlesubmit}>
-              <div className="Auth-form-content">
-                <label className="label">Name :-</label>
+            <form className="containe" onSubmit={handlesubmit}>
+              <div className=" " style={{ color: "black",fontWeight:"bold" }}>
+                <label className="label" required color="black">Name </label>&emsp;&ensp;
 
-                <input type="text" required onChange={nameChange}></input>
+                <input type="text" required onChange={nameChange} placeholder="Enter Name"></input>
+              </div><br></br>
+
+              <div className=""style={{ color: "black",fontWeight:"bold" }}>
+                <label className="label">Email </label>&emsp;&ensp;&nbsp;
+
+                <input type="text" required onChange={emailChange} placeholder="Enter Email"></input>
               </div>
+              <br></br>
 
-              <div className="Auth-form-content">
-                <label className="label">Email :-</label>
-
-                <input type="text" required onChange={emailChange}></input>
-              </div>
-
-              <div className="Auth-form-content">
+              <div className=""style={{ color: "black",fontWeight:"bold"}}>
                 <label className="label" required>
                   Password
-                </label>
+                </label>&nbsp;
 
                 <input
                   type="password"
                   required
-                  onChange={passwordChange}
+                  onChange={passwordChange} placeholder="Enter password"
                 ></input>
               </div>
               <br></br>
