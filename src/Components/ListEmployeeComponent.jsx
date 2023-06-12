@@ -69,7 +69,7 @@ class ListEmployeeComponent extends Component {
             
             <div style={{backgroundImage:`url('https://www.pixelstalk.net/wp-content/uploads/2016/08/Background-Full-HD-Images-For-Desktop.png')`, height: '900px'}}>
                 <div>
-                <Link to='/'> <button  class="btn btn-danger btn-lg float-right" size="xl" style={{marginRight: "10px",size:'xl'}}>{"LOGOUT->"}</button></Link>
+                <Link to='/'> <button  class="btn btn-outline-warning btn-lg float-right" size="sm" style={{marginRight: "5px",size:'sm'}}>{"LOGOUT->"}</button></Link>
                 </div>
                 <div className='container'>
                     <h2 className="text-center" style={{color:"white"}}>Employees List</h2>
@@ -89,7 +89,7 @@ class ListEmployeeComponent extends Component {
                                     <th> Salary</th>
                                     <th> Gender</th>
                                     <th> Date Of Birth</th>
-                                    <th style={{width:"300px",textAlign:"center"}}> Actions</th>
+                                    <th style={{width:"200px",textAlign:"center"}}> Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -110,7 +110,7 @@ class ListEmployeeComponent extends Component {
 
                                            <Link to={'/employees'}><button style={{marginLeft:"20px"}} onClick={ () => this.deleteEmployee(employee.id)} className="btn btn-danger">Delete </button></Link>
 
-                                            <Link to={`/view-employee/${employee.id}`}><button style={{marginLeft:"20px"}}onClick={ () => this.viewEmployee(employee.id)} className="btn btn-info">View</button></Link>
+                                            {/* <Link to={`/view-employee/${employee.id}`}><button style={{marginLeft:"20px"}}onClick={ () => this.viewEmployee(employee.id)} className="btn btn-info">View</button></Link> */}
 
                                             </td>
                                         </tr>
