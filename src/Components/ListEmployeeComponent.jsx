@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import EmployeeService from './services/EmployeeService';
 import { Link } from 'react-router-dom';
-import CreateEmployeeComponent from './CreateEmployeeComponent';
-import axios from 'axios';
+
+
 
 
 class ListEmployeeComponent extends Component {
@@ -67,20 +67,20 @@ class ListEmployeeComponent extends Component {
     render() {
         return (
             
-            <div style={{backgroundImage:`url('https://www.pixelstalk.net/wp-content/uploads/2016/08/Background-Full-HD-Images-For-Desktop.png')`, height: '900px'}}>
+            <div style={{backgroundImage:`url('https://data.1freewallpapers.com/download/triangle-solid-black-gold-4k-abstract-2560x1920.jpg')`, height: '625px'}}>
                 <div>
                 <Link to='/'> <button  class="btn btn-outline-warning btn-lg float-right" size="sm" style={{marginRight: "5px",size:'sm'}}>{"LOGOUT->"}</button></Link>
                 </div>
                 <div className='container'>
-                    <h2 className="text-center" style={{color:"white"}}>Employees List</h2>
+                    <h2 className="text-center" style={{color:"white"}}>Employee Details</h2>
                     <div className = "row">
-                        <Link to='/add-employee'><button className='btn btn-primary'>Add Employee</button></Link>                    
+                        <Link to='/add-employee'><button className='btn btn-warning'>Add  New-Employee</button></Link>                    
                     </div>
                     <br></br>
                     <div className = "row">
                         <table className = "table table-striped table-bordered">
 
-                            <thead class='thead-dark'>
+                            <thead class='thead-light'style={{color:"white"}}>
                                 <tr>
                                     <th> First Name</th>
                                     <th> Last Name</th>
@@ -106,9 +106,9 @@ class ListEmployeeComponent extends Component {
                                              <td style={{color:"white"}}> {employee.dob}</td>
                                              <td>
 
-                                          <Link to={`/update-employee/${employee.id}`}><button style={{marginLeft:"20px"}} onClick={ () => this.editEmployee(employee.id)} className="btn btn-success" >Edit</button></Link>
+                                          <Link to={`/update-employee/${employee.id}`}><button onClick={ () => this.editEmployee(employee.id)} className="btn btn-success" >Update</button></Link>
 
-                                           <Link to={'/employees'}><button style={{marginLeft:"20px"}} onClick={ () => this.deleteEmployee(employee.id)} className="btn btn-danger">Delete </button></Link>
+                                           <Link to={'/employees'}><button  onClick={ () => this.deleteEmployee(employee.id)} className="btn btn-danger">Delete </button></Link>
 
                                             {/* <Link to={`/view-employee/${employee.id}`}><button style={{marginLeft:"20px"}}onClick={ () => this.viewEmployee(employee.id)} className="btn btn-info">View</button></Link> */}
 
