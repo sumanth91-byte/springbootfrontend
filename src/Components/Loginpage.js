@@ -43,7 +43,7 @@ const Home = () => {
     <div
       style={{
         backgroundImage: `url('https://static1.bigstockphoto.com/5/7/4/large1500/475248833.jpg')`,
-        height: "750px",
+        height: "625px",
       }}
     >
       <div className="Auth-form-container">
