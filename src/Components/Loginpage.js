@@ -42,29 +42,30 @@ const Home = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('https://wallpaperaccess.com/full/452101.jpg')`,
+        backgroundImage: `url('https://static1.bigstockphoto.com/5/7/4/large1500/475248833.jpg')`,
         height: "750px",
       }}
     >
       <div className="Auth-form-container">
-        <div
+        {/* <div
           className="Auth-form"
-          style={{ backgroundColor: "black", color: "white" }}
-        >
-          <div className="Auth-form-content">
-            <h1>SignIn !</h1>
+          // style={{ backgroundColor: "black", color: "white" }}
+        > */}
+          <div className="Auth-form-content"style={{ color: "white" }}>
+            <h1> &nbsp;&nbsp;SIGN IN</h1>
+            <br></br>
 
             <form className="containe" onSubmit={handlesubmit}>
-              <div className="Auth-form-content">
-                <label className="label">Email :- </label>
-
+              <div className=""style={{ color: "white",fontWeight:"bold" }}>
+                <label className="label">&nbsp; Email  </label>&emsp;&emsp;&nbsp;
+                
                 <input type="text" required onChange={emailChange}></input>
               </div>
 
-              <div className="Auth-form-content">
+              <div className=""style={{ color: "white",fontWeight:"bold" }}>
                 <label className="label" required>
                   Password
-                </label>
+                </label>&emsp;
 
                 <input
                   type="password"
@@ -88,7 +89,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
